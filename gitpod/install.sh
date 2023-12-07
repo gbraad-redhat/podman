@@ -1,11 +1,8 @@
 #!/bin/sh
 
-# clean workspace folder
-rm -rf /workspace/podman
-mkdir /workspace/podman
-ln -s /workspace/podman ~/Projects
-git init /workspace/podman
-
+# Set workdir as usual
+mkdir ~/Projects
+ln -s /workspace/podman ~/Projects/podman
 cd ~/Projects
 
 exit 0
